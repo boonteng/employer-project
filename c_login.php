@@ -13,8 +13,6 @@ if ($conn-> connect_error){
 			$company_name=$_POST['company_name'];
 			$password=$_POST['password'];
 			$sql = "SELECT * FROM customer WHERE company_name='$company_name' && password='$password' ";
-			//if((strtolower($_POST['company_name']) == 'veecotech') && ($_POST['password'] == 'vee'))
-			//{
 				session_start();
 				$_SESSION['company_name'] = $_POST['company_name'];
 				$_SESSION['loggedin'] = time( );
@@ -22,12 +20,6 @@ if ($conn-> connect_error){
 				echo $_SESSION['loggedin'];
 				header ('Location:c_home.php');
 				exit();
-			//} 
-			//else
-			//{
-			//	print'<p>The submitted company name and password do not match those on file!<br />
-			//	Go back and try again.</p>';
-			//}
 		}
 		else
 		{
