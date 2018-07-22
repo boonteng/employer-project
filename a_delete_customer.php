@@ -22,6 +22,7 @@ if(isset($_GET['del']))
 	//auto refresh the page after the delete action
 	echo"<meta http-equiv='refresh' content='0;url=a_customer_management.php'>";
 }
+	?>
 </body>
 </html>
 <?php require('footer.html'); ?>
