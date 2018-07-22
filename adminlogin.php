@@ -14,7 +14,7 @@
 				$_SESSION['loggedin'] = time( );
 				echo $_SESSION['email'];
 				echo $_SESSION['loggedin'];
-				header ('Location:a_add_customer.php');
+				header ('Location:a_customer_management.php');
 				exit();
 			} 
 			else
